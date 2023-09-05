@@ -3,8 +3,232 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  height: 100vh;
+  background: rgb(86,127,160);
+  background: linear-gradient(180deg, rgba(86,127,160,1) 0%, rgba(28,83,128,1) 50%, rgba(255,255,255,1) 50%);
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  margin-top: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2.5vw;
+}
+.righ-side{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
+.logo{
+  align-items: flex-start;
+  padding-right: 6.5vw;
+}
+.login {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
+  background: rgb(28,83,128);
+  background: linear-gradient(0deg, rgba(28,83,128,1) 0%, rgba(48,98,139,1) 27%, rgba(157,184,207,1) 100%);
+  width: 4vw;
+  height: 5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 23px -24px 21px -28px rgba(0,0,0,0.31),
+  -25px -24px 21px -28px rgba(0,0,0,0.31);
+  border-radius: 0.5vh;
+  width: 20vw;
+  margin-left: 2.5vw;
+  padding-right: 8vw;
+
+}
+.capture {
+  font-weight: bold;
+  color: #06365f;
+  font-size: 2rem;
+  line-height: 4vh;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.promo{
+  padding-left: 1vw;
+}
+.descr {
+  padding-left: 1vw;
+}
+
+.free{
+  padding-left: 1vw;
+}
+.download {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left:2vw;
+  gap: 5vw;
+}
+
+.footer{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8vh;
+  align-items: center;
+  text-decoration: none;
+}
+
+.insideFooter{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #1c5380;
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: lightgrey;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px){
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: rgb(86,127,160);
+  background: linear-gradient(180deg, rgba(86,127,160,1) 0%, rgba(28,83,128,1) 50%, rgba(255,255,255,1) 50%);
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+.phone {
+  display: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 0.5vh;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
+  background: rgb(28,83,128);
+  background: linear-gradient(0deg, rgba(28,83,128,1) 0%, rgba(48,98,139,1) 27%, rgba(157,184,207,1) 100%);
+  width: 20vw;
+  height: 4vh;
+  padding: 0.5vh 0.5vw;
+  margin-bottom: 5vw;
+}
+.righ-side{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 23px -24px 21px -28px rgba(0,0,0,0.31),
+  -25px -24px 21px -28px rgba(0,0,0,0.31);
+  border-radius: 0.5vh;
+  width: 70vw;
+  margin-left: 10vw;
+  padding-right:10vw;
+  margin-right: 10vw
+}
+
+.capture {
+  font-weight: bold;
+  color: #06365f;
+  font-size: 1.5rem;
+  line-height: 4vh;
+  padding-left: 4vw;
+}
+
+.promo{
+  padding-left: 4vw;
+}
+.bold {
+  font-weight: bold;
+}
+.descr {
+  padding-left: 4vw;
+}
+
+.download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin-left: 4vw;
+}
+
+.footer{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4vh;
+  align-items: center;
+}
+
+.insideFooter{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #1c5380;
+  font-weight: bold;
+}
+.copyright {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: lightgrey;
+  font-weight: bold;
+}
+
+
+
 }
